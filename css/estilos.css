@@ -1,0 +1,189 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+hr{
+	color: blue;
+}
+
+.cabecera h1{
+	margin: 0;
+	color: #fff;
+	background: skyblue;
+	width: 100%;
+	height: 80px;
+	line-height: 40px;
+	text-align: center;
+}
+
+header{
+	width: 100%;
+	background: #4e94ab;
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+header label:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu li{
+	border-right: 1px solid #fff;
+}
+
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: white;
+}
+
+	.inicio {
+		padding: 20px;
+		font-family: "Segoe UI";
+
+	}
+
+	.servicios {
+		padding: 20px;
+		font-family: "Segoe UI";
+
+	}
+
+	.productos {
+		padding: 20px;
+		font-family: "Segoe UI";
+	}
+
+	.clientes {
+		padding: 20px;
+		font-family: "Segoe UI";
+	}
+
+.trabajo p{
+	width: 500px;
+	margin: 20px auto;
+	text-align: justify;
+	line-height: 40px;
+	font-family: "Segoe UI";
+}
+
+.contacto{
+	height: 450px;
+	background: skyblue;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+.formulario{
+	padding-top: 10px;
+}
+
+.formulario input{
+	border: none;
+	border-radius: 5px;
+	padding: 8px;
+	width: 20%;
+}
+
+.formulario textarea{
+	border-radius: 5px;
+}
+
+.formulario button{
+	border: none;
+	width: 20%;
+	height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover{
+	background: skyblue;
+	color: white;
+	border: 2px solid #fff;
+	font-size: 15px;
+}
+
+.button-up{
+	width: 50px;
+	height: 50px;
+	background: skyblue;
+	color: white;
+	cursor: pointer;
+	border-radius: 50%;
+	font-size: 20px;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 50px;
+	right: 50px;
+	border: 4px solid white;
+	transition: all 300ms ease;
+	transform: scale(0);
+}
+
+.button-up:hover{
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+	header label{
+		display: block;
+	}
+
+	.menu{
+		position: absolute;
+		background: #4e94ab;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 1s;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+
+	.menu li{
+		border-top: 1px solid #fff;
+	}
+
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+}
+
+
+
+
+
